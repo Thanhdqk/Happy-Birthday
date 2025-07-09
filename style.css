@@ -732,13 +732,40 @@ body {
     animation: scaleCricle 3s 15s forwards ease-in-out;
   }
 
-  .title .hat {
+  /* .title .hat {
     position: absolute;
     right: -98px;
     top: -51px !important;
     transform: rotate(-40deg);
     z-index: -1;
     animation: topHat 4s 7s forwards ease;
+  } */
+  .title .hat {
+    position: absolute;
+    right: -98px;
+    top: -300px;
+    transform: rotate(-60deg);
+    opacity: 0;
+    z-index: -1;
+    animation: topHat 3s 2s forwards ease-out;
+  }
+
+  @keyframes topHat {
+    0% {
+      top: -300px;
+      transform: rotate(-60deg);
+      opacity: 0;
+    }
+    50% {
+      top: -100px;
+      transform: rotate(-30deg);
+      opacity: 0.5;
+    }
+    100% {
+      top: -30px;
+      transform: rotate(0deg);
+      opacity: 1;
+    }
   }
 
   .box__letter .letter__border {
@@ -828,6 +855,122 @@ body {
 
   .right .balloon_one img {
     width: 76px !important;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .flag__birthday .flag__left {
+    transform: rotate(-8deg) translate(-90px, 5px);
+  }
+
+  .flag__birthday .flag__right {
+    transform: rotate(8deg) translate(-80px, 35px) scaleX(-1);
+  }
+
+  .content {
+    width: 100%;
+    padding-top: 2.5rem;
+    gap: 30px;
+  }
+
+  .title {
+    font-size: 2.5rem;
+    letter-spacing: 6px;
+  }
+
+  #btn__letter {
+    width: 220px;
+    font-size: 1.1rem;
+    padding: 8px 6px;
+  }
+
+  .cricle {
+    right: -50px;
+    top: 15px;
+  }
+
+  /* .title .hat {
+    right: -90px;
+    top: -50px;
+    transform: rotate(-35deg);
+  } */
+  .title .hat {
+    position: absolute;
+    right: 25px;
+    top: -300px;
+    transform: rotate(-60deg);
+    opacity: 0;
+    z-index: -1;
+    animation: topHat 3s 2s forwards ease-out;
+  }
+
+  @keyframes topHat {
+    0% {
+      top: -300px;
+      transform: rotate(-60deg);
+      opacity: 0;
+    }
+    50% {
+      top: -100px;
+      transform: rotate(-30deg);
+      opacity: 0.5;
+    }
+    100% {
+      top: -30px;
+      transform: rotate(0deg);
+      opacity: 1;
+    }
+  }
+
+  .box__letter .letter__border {
+    width: 80vw;
+    height: 320px;
+    padding: 20px;
+  }
+
+  .letter__border .letter {
+    padding-top: 18px;
+  }
+
+  .letter__border .letter .title__letter {
+    font-size: 1.6rem;
+  }
+
+  .letter__border .letter .content__letter {
+    padding-top: 1rem;
+    padding-bottom: 60px;
+  }
+
+  .content__letter .right .text__letter {
+    font-size: 1rem;
+    padding: 25px 20px 10px 20px;
+  }
+
+  .content__letter .right .love__img {
+    right: 150px;
+    top: 160px;
+  }
+
+  .love__img img {
+    width: 90px;
+  }
+
+  .content .right .image {
+    width: 240px;
+    height: 240px;
+  }
+
+  .name span {
+    font-size: 1.2rem;
+  }
+
+  .right .balloon_one {
+    left: -65px;
+    top: 5px;
+  }
+
+  .right .balloon_one img {
+    width: 80px !important;
   }
 }
 
